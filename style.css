@@ -1,7 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 body { 
     background-color: whitesmoke;
     margin: 0;
     padding: 10px;
+    font-family: "Open Sans", sans-serif;
+    background-image: url("./images/berylaann1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right;
+    background-attachment: fixed;
 }
 nav {
     background: rgb(50, 240, 50);
@@ -14,6 +25,11 @@ p {
 #about-bootcamp {
     background: whitesmoke;
     padding: 10px;
+    width: 450px;
+    height: 450px;
+    border: 5px solid green;
+    border-radius: 10px;
+    margin: 10px;
 }
 
 .text-center {
@@ -99,4 +115,32 @@ th {
 img {
     width: 250px;
     height: 250px;
+}
+section p { 
+    text-decoration: underline;
+}
+section > p {
+ letter-spacing: 10px;   
+}
+section ~ p {
+    word-spacing: 30px;
+    color: black;
+}
+section + p {
+    text-transform: uppercase;
+}
+* {
+    color: orange;
+}
+h1 {
+    color: purple;
+}
+input[type="email"] {
+    font-size: 30px;
+}
+
+@media screen  and (max-width: 576px) {
+    input[type="email"] {
+        font-size: 14px;
+    }    
 }
