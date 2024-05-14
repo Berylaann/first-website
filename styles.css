@@ -1,8 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 * {
     box-sizing: border-box;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 body { 
     background-color: whitesmoke;
     margin: 0;
@@ -138,9 +138,33 @@ h1 {
 input[type="email"] {
     font-size: 30px;
 }
-
-@media screen  and (max-width: 576px) {
-    input[type="email"] {
+.flex-container {
+    display: flex;
+    padding: 30px 0;
+    align-items: center;
+    justify-content: center;
+}
+.flex-container > div {
+    width: 50%;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 250px;
+    gap: 10px;
+}
+.grid-container > div {
+    background: fuchsia;
+    padding: 10px;
+}
+@media screen and (max-width: 576px) {
+    input [type="email"] {
         font-size: 14px;
-    }    
+    }
+    .flex-container {
+      flex-direction: column-reverse;  
+}
+.flex-container > div {
+    width: 100%;
+  }
 }
