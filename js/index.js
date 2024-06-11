@@ -1,3 +1,14 @@
+// Import all modules
+import brushTeeth from "./modules/brushTeeth.js";
+import closeEyes from "./modules/closeEyes.js";
+import getIntoBed from "./modules/getIntoBed.js";
+import putOnClothes from "./modules/putOnClothes.js";
+import skincare from "./modules/skincare.js";
+import sleep from "./modules/sleep.js";
+import sortOutHair from "./modules/sortOutHair.js";
+import turnOffLights from "./modules/turnOffLights.js";
+
+
 console.log("I am testing out the console");
 
 var firstName = "Beryl Ann"; // declaring a variable
@@ -12,7 +23,6 @@ console.log(c);
 b = 25;
 c = a + b;
 console.log(c);
-
 
 /*
 var $firstName;
@@ -613,3 +623,16 @@ const numbersDoubledAndGreaterThanTen = evenNumbers
   .filter((num) => num > 10);
 
 console.log(numbersDoubledAndGreaterThanTen); // [12, 16, 20]
+
+function getReadyForBed() {
+    brushTeeth();
+    skincare();
+    putOnClothes();
+    sortOutHair();
+    turnOffLights();
+    getIntoBed();
+    closeEyes();
+    sleep();
+}
+
+getReadyForBed();

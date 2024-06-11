@@ -52,7 +52,7 @@ function crealeListOfFruits(fruits) {
        item.textContent = fruit;
        unOrderedList.appendChild(item);
 
-    })
+    });
 title.appendChild(titleText);
     listContainer.appendChild(title);
     listContainer.appendChild(unOrderedList); 
